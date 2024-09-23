@@ -74,7 +74,7 @@ def generate_response(query, context):
         Assistant's response:"""
 
         response = openai_client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a helpful probability assistant.Ensure correct LaTeX formatting : $latex_expr$"},
                 {"role": "user", "content": prompt}
